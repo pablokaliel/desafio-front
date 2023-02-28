@@ -8,7 +8,7 @@ export default createGlobalStyle`
 }
 
 body{
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Roboto",sans-serif;
   min-height: 100vh;
    background: #dedede;
 }

@@ -65,7 +65,7 @@ export const SwapperBtn = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
-margin-top:37px;
+margin:37px 0px;
 `;
 
 export const Swapper = styled.div`
