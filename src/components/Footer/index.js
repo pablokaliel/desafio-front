@@ -50,20 +50,20 @@ function Footer() {
           <Title>Redes Sociais</Title>
           <DivIcons>
             <a
-              href="https://www.facebook.com/geek.cultura.store"
+              href="https://github.com/pablokaliel"
               rel="noopener noreferrer"
               target="_blank"
             >
               <Facebook />
             </a>
             <a
-              href="https://www.instagram.com/culturageek.store/"
+              href="https://www.instagram.com/pablokallyel/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <Instagram />
             </a>
-            <a href="#" rel="noopener noreferrer" target="_blank">
+            <a href="https://github.com/pablokaliel" rel="noopener noreferrer" target="_blank">
               <Email />
             </a>
           </DivIcons>

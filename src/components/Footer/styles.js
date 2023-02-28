@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsFacebook, BsInstagram, BsEnvelope, BsSearch } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsEnvelope, BsGithub } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
@@ -117,7 +117,7 @@ export const Context = styled.div`
 export const ImgPg = styled.img`
 
 `;
-export const Email = styled(BsEnvelope)`
+export const Email = styled(BsGithub)`
   
   height: 20px;
   width: 20px;
