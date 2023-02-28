@@ -37,7 +37,7 @@ function Footer() {
           <Title>Suporte</Title>
           <Nick to="/">central de ajuda </Nick>
           <Nick to="/">fale conosco </Nick>
-          <Nick to="/">Cuidados com sua Caneca </Nick>
+          <Nick to="/">Cuidados com seu vinho </Nick>
           <Nick to="/">Politica de Privacidade </Nick>
           <Nick to="/">Blog </Nick>
         </FooterContact>
