@@ -108,6 +108,9 @@ export const Star = styled.img`
 export const DivComent = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 770px) {
+   display: none; 
+  }
 `;
 
 export const Coment = styled.span`
@@ -142,7 +145,7 @@ export const NotSocio = styled.div`
 `;
 
 export const DivBtn = styled.div`
-  margin: 48px 0px;
+  margin: 0px 0px 48px 0px;
 `;
 
 export const Btn = styled.button`
