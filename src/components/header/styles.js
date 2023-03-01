@@ -6,13 +6,16 @@ export const Container = styled.div`
 
   background-color: #fff;
   border-bottom: 0.5px solid #cccccc;
+  
   @media (max-width: 770px) {
   width:100%;
   }
 `;
+
 export const Swapper = styled.div`
   display: flex;
   margin: auto;
+  
   max-width: 1120px;
   height: 100%;
 
@@ -33,10 +36,10 @@ height: 28px;
 
 export const DivOptions = styled.ul`
   display: flex;
-  flex: 3;
-
   align-items: center;
   justify-content: space-evenly;
+  
+  flex: 3;
 
   @media (max-width: 770px) {
   display:none;
@@ -47,6 +50,7 @@ export const Options = styled.a`
   list-style: none;
   font-size: 18px;
   color: #555555;
+
   transition: all 0.3s ease-in-out;
 
   :focus {
@@ -61,12 +65,10 @@ export const Options = styled.a`
 
 export const DivPerfil = styled.div`
   display: flex;
-  flex: 1;
-
   justify-content: space-around;
   align-items: center;
-
-
+  
+  flex: 1;
 `;
 
 export const DivSearch = styled.div`

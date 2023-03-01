@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   max-width: 1120px;
- 
- margin: 0 auto;
+
+  margin: 0 auto;
 `;
 
 export const Swapper = styled.div`
@@ -42,8 +42,8 @@ export const Order = styled.div`
 `;
 
 export const Title = styled.h1`
-margin-top:18px;
-margin-bottom:8px;
+  margin-top: 18px;
+  margin-bottom: 8px;
 `;
 
 export const DivOpinion = styled.div`
@@ -55,9 +55,16 @@ export const Info = styled.span`
   margin-right: 8px;
 `;
 
-export const IconEUA = styled.img``;
+export const IconEUA = styled.img`
+  margin-right: 8px;
+`;
 
-export const DivStar = styled.div``;
+export const DivStar = styled.div`
+  display: flex;
+  span {
+    font-size: 11px;
+  }
+`;
 
 export const LinkBack = styled(Link)`
   margin-top: 30px;
@@ -65,7 +72,9 @@ export const LinkBack = styled(Link)`
   color: #000;
 `;
 
-export const Star = styled.img``;
+export const Star = styled.img`
+  cursor: pointer;
+`;
 
 export const DivComent = styled.div`
   display: flex;
@@ -110,24 +119,24 @@ export const DivBtn = styled.div`
 export const Btn = styled.button`
   height: 56px;
   width: 328px;
-  
+
   background: #7ebc43;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
   border-radius: 4px;
   border: none;
 
-  transition:all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-:hover{
-  background: #659d30;
-}
+  :hover {
+    background: #659d30;
+  }
 `;
 
 export const BtnDiscrement = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   height: 24px;
   width: 24px;
 
@@ -141,10 +150,10 @@ export const BtnIncrement = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   height: 24px;
   width: 24px;
-  
+
   border: 1px solid #fff;
   border-radius: 24px;
   background: transparent;
@@ -161,10 +170,10 @@ export const BtnNumber = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
+
   width: 100%;
   height: 100%;
-  
+
   background-color: transparent;
   color: #fff;
 `;

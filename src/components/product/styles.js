@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 export const DivRefine = styled.div`
 margin-top:40px;
+
 @media (max-width: 770px) {
    display:none;
   }
@@ -45,6 +46,7 @@ export const DivProduct = styled.div`
 margin-top:40px;
 margin-left:130px;
 margin-bottom:80px;
+
 @media (max-width: 770px) {
   margin:0 auto;
   margin-top:40px;
@@ -65,6 +67,7 @@ export const SwapperBtn = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
+
 margin:37px 0px;
 `;
 
@@ -83,15 +86,21 @@ box-shadow: 0px 9.73384px 14.6008px rgba(0, 0, 0, 0.1);
 
 export const DivImg = styled.div`
 display:flex;
-flex-direction:column;
-
 align-items:center;
 justify-content:center;
+
+flex-direction:column;
 text-align:center;
 `;
 
 export const Img = styled.img`
 margin-bottom:8px;
+transition:all 0.3s;
+cursor:pointer;
+
+:hover{
+  scale: 1.173;
+}
 `;
 
 export const DivSocio = styled.div`
@@ -100,6 +109,7 @@ p{
   font-weight:bold;
   color:#1d1d1b;
 }
+
 span{
   color:#b6116e;
   font-size:17px;
@@ -159,16 +169,19 @@ margin-bottom:16px;
 
 font-size:11px;
 color:#888888;
+
 p{
   text-decoration:line-through;
   margin-right:4px;
 }
+
 span{
+  width:48px;
+  height:13px;
+  
   font-size:10px;
   color:#fff;
   background: #F79552;
-  width:48px;
-  height:13px;
 }
 `;
 
@@ -187,6 +200,7 @@ color:#B6116E;
 margin-right:8px;
 
 transition: all 0.3s ease-in-out;
+
 :focus{
   background:#B6116E;
   color:#fff;
@@ -203,6 +217,7 @@ color:#B6116E;
 margin-right:8px;
 
 transition: all 0.3s ease-in-out;
+
 :focus{
   background:#B6116E;
   color:#fff;
@@ -219,11 +234,13 @@ color:#B6116E;
 margin-right:8px;
 
 transition: all 0.3s ease-in-out;
+
 :focus{
   background:#B6116E;
   color:#fff;
 }
 `;
+
 export const Points = styled.p`
 color:#B6116E;
 margin-left:8px;

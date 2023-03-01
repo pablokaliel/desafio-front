@@ -26,7 +26,7 @@ function Header() {
       <Swapper>
 
         <DivLogo>
-          <Link to="/"><ImgLogo src={logo}/></Link>
+          <Link to="/"><ImgLogo src={logo} alt="logo no header"/></Link>
         </DivLogo>
         
         <DivOptions>
@@ -39,15 +39,15 @@ function Header() {
 
         <DivPerfil>
           <DivSearch>
-            <Search src={iconsearch} />
+            <Search src={iconsearch} alt="botão pesquisar"/>
           </DivSearch>
           
           <DivIconPerfil>
-            <IconPerfil src={iconperfil} />
+            <IconPerfil src={iconperfil} alt="botão perfil"/>
           </DivIconPerfil>
           
           <DivExit>
-            <Exit src={Bitmap} />
+            <Exit src={Bitmap} alt="botão bitmap"/>
           </DivExit>
         </DivPerfil>
 

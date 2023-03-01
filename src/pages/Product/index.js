@@ -50,12 +50,12 @@ function Product() {
     <Container>
      
       <LinkBack to="/">
-        <img src={back} style={{ height: 20, width: 20, marginRight: 19 }} />
+        <img src={back} style={{ height: 20, width: 20, marginRight: 19 }}  alt="botao voltar"/>
         Voltar
       </LinkBack>
 
       <DivImageDetail>
-        <Img src={detail} />
+        <Img src={detail} alt="imagem grande de detalhe" />
       </DivImageDetail>
       
       <DivDetail>
@@ -66,16 +66,17 @@ function Product() {
         <Title>Apothic Red 2019</Title>
 
         <DivOpinion>
-          <IconEUA src={EUA} />
+          <IconEUA src={EUA} alt="icone Estados Unidos" />
           <Info>Estados Unidos</Info>
           <Info>Tinto</Info>
           <Info>Meio Seco/Demi-Sec</Info>
           <Info>750 ml</Info>
           <DivStar>
-            <Star src={star} />
-            <Star src={star} />
-            <Star src={star} />
-            <Star src={star} />
+            <Star src={star} alt="icone estrela" />
+            <Star src={star} alt="icone estrela" />
+            <Star src={star} alt="icone estrela" />
+            <Star src={star} alt="icone estrela" />
+            <span>(2)</span>
           </DivStar>
         </DivOpinion>
 
