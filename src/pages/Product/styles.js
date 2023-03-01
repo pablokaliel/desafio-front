@@ -5,7 +5,11 @@ export const Container = styled.div`
   display: flex;
   max-width: 1120px;
 
-  margin: 0 auto;
+  margin: 24px auto;
+  @media (max-width: 770px) {
+    display:flex;
+    flex-direction:column;
+  }
 `;
 
 export const Swapper = styled.div`
@@ -20,13 +24,22 @@ export const DivImageDetail = styled.div`
   margin-top: 80px;
 `;
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  @media (max-width: 770px) {
+   width: 100%;
+  }`;
 
 export const DivDetail = styled.div`
   width: 100%;
-
   margin-top: 80px;
   margin-left: 162px;
+  @media (max-width: 770px) {
+    display:flex;
+    flex-direction:column;
+    margin:0px auto;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Order = styled.div`
@@ -53,10 +66,17 @@ export const DivOpinion = styled.div`
 
 export const Info = styled.span`
   margin-right: 8px;
+
+  &:nth-child(2){
+    display:none;
+  }
 `;
 
 export const IconEUA = styled.img`
   margin-right: 8px;
+  @media (max-width: 770px) {
+   display: none; 
+  }
 `;
 
 export const DivStar = styled.div`
@@ -64,12 +84,21 @@ export const DivStar = styled.div`
   span {
     font-size: 11px;
   }
+
+  @media (max-width: 770px) {
+    display:none;
+  
+  }
 `;
 
 export const LinkBack = styled(Link)`
   margin-top: 30px;
   display: flex;
   color: #000;
+  transition: all 0.3s;
+  :hover{
+    opacity: 0.6;
+  }
 `;
 
 export const Star = styled.img`
@@ -95,7 +124,7 @@ export const Price = styled.div`
   display: flex;
   align-items: flex-end;
   font-weight: bold;
-
+  
   p {
     font-size: 30px;
     color: #c81a78;
@@ -113,7 +142,7 @@ export const NotSocio = styled.div`
 `;
 
 export const DivBtn = styled.div`
-  margin-top: 48px;
+  margin: 48px 0px;
 `;
 
 export const Btn = styled.button`
@@ -144,6 +173,10 @@ export const BtnDiscrement = styled.button`
   border-radius: 24px;
   background: transparent;
   color: #fff;
+
+  @media (max-width: 770px) {
+   display:none; 
+  }
 `;
 
 export const BtnIncrement = styled.button`
@@ -158,6 +191,9 @@ export const BtnIncrement = styled.button`
   border-radius: 24px;
   background: transparent;
   color: #fff;
+  @media (max-width: 770px) {
+    display: none;
+  }
 `;
 
 export const BtnAdd = styled.button`
@@ -178,4 +214,7 @@ export const BtnNumber = styled.button`
   color: #fff;
 `;
 
-export const Number = styled.p``;
+export const Number = styled.p`
+@media (max-width: 770px) {
+   display: none; 
+  }`;
