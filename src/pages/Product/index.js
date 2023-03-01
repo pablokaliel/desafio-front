@@ -37,12 +37,16 @@ function Product() {
   const [number, setNumber] = useState(1);
 
   function increment() {
-    setNumber(number + 1);
+   if( number > 9){
+    return(
+    alert(`unidade maxima por compra é ${number}`))
+   }
+   setNumber(number + 1);
   }
 
   function discrement() {
-    if (number < 0) {
-      setNumber = 0;
+    if (number < 1) {
+     return
     }
     setNumber(number - 1);
   }
@@ -60,7 +64,7 @@ function Product() {
       
       <DivDetail>
         <Order>
-          Vinhos <span> > </span> Estados Unidos <span> > </span>{" "}
+          Vinhos <span> {">"} </span> Estados Unidos <span> {">"} </span>{" "}
           <span>Califórnia </span>
         </Order>
         <Title>Apothic Red 2019</Title>
