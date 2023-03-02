@@ -145,7 +145,10 @@ export const NotSocio = styled.div`
 `;
 
 export const DivBtn = styled.div`
-  margin: 0px 0px 48px 0px;
+    margin-top:48px;
+  @media (max-width: 770px) {
+    margin: 0px 0px 48px 0px;
+  }
 `;
 
 export const Btn = styled.button`
@@ -162,6 +165,7 @@ export const Btn = styled.button`
   :hover {
     background: #659d30;
   }
+  
 `;
 
 export const BtnDiscrement = styled.button`

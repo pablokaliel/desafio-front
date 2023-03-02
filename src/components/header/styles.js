@@ -37,10 +37,11 @@ height: 28px;
 export const DivOptions = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  
   
   flex: 3;
-
+  
   @media (max-width: 770px) {
   display:none;
   }
@@ -50,9 +51,12 @@ export const Options = styled.a`
   list-style: none;
   font-size: 18px;
   color: #555555;
-
+  padding:10px;
+  margin-right:48px;
   transition: all 0.3s ease-in-out;
-
+  :nth-child(1){
+    margin-left:80px;
+  }
   :focus {
     color: #d14b8f;
     border-bottom: 1px solid #d14b8f;

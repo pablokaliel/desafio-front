@@ -118,6 +118,8 @@ span{
 `;
 
 export const DivNotSocio = styled.div`
+margin-top:8px;
+margin-bottom:20px;
 p{
   font-size:12px;
   font-weight:bold;
@@ -165,7 +167,7 @@ transition:all .3s ease-in-out;
 
 export const Price = styled.div`
 display:flex;
-margin-bottom:16px;
+margin: 8px 0px;
 
 font-size:11px;
 color:#888888;
