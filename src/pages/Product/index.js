@@ -32,10 +32,15 @@ import {
 } from "./styles";
 
 import back from "../../assets/back.svg";
+import { Link } from "react-router-dom";
 
 function Product() {
   const [number, setNumber] = useState(1);
 
+  function success() {
+    alert(`Parabéns, sua compra com ${number} unidades de vinho foi efetuada com sucesso, você sera redirecionado a página inicial.` );
+  }
+ 
   function increment() {
    if( number > 9){
     return(
@@ -109,7 +114,8 @@ function Product() {
               <BtnDiscrement onClick={discrement}>-</BtnDiscrement>{" "}
               <Number>{number}</Number>{" "}
               <BtnIncrement onClick={increment}>+</BtnIncrement>
-              <BtnAdd>Adicionar</BtnAdd>
+              <Link to="/"><BtnAdd onClick={success}>Adicionar</BtnAdd></Link>
+
             </BtnNumber>
           </Btn>
         </DivBtn>

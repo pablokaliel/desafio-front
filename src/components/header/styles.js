@@ -79,7 +79,7 @@ export const DivSearch = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  position: relative;
   width: 56px;
   height: 56px;
 
