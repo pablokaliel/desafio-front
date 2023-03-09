@@ -24,7 +24,7 @@ import {
   BtnProxThree,
   BtnProxOne,
   Points,
-  SwapperBtn
+  SwapperBtn,
 } from "./styles";
 
 import arrowprox from "../../assets/arrow2.png";
@@ -33,7 +33,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Product() {
- 
   const data = [
     {
       id: 1,
@@ -59,7 +58,7 @@ function Product() {
     },
     {
       id: 3,
-      title: "Bacalhôa Meia Pipa Private Selection Castelão Syrah 2014",
+      title: "maça",
       oldprice: "37,90",
       off: "60%OFF",
       image: vinho,
@@ -137,61 +136,96 @@ function Product() {
   ];
 
   const numberList = data.length;
-  const [selected,setSelectedValue]= useState('R$40')
+  const [selected, setSelectedValue] = useState("R$40");
 
   const handleChange = (e) => {
     setSelectedValue(e.target.value);
   };
   return (
     <Container>
-     
       <DivRefine>
         <Title>Refine sua busca:</Title>
         <SubTitle>Por preço</SubTitle>
-        
+
         <DivOptions>
-         
           <DivRatio>
-            <Options type="checkbox" checked={selected === 'R$40'} onChange={handleChange} value="R$40" /> <p>até R$40</p>
+            <Options
+              type="checkbox"
+              checked={selected === "R$40"}
+              onChange={handleChange}
+              value="R$40"
+            />{" "}
+            <p>até R$40</p>
           </DivRatio>
-         
+
           <DivRatio>
-            <Options type="checkbox" checked={selected === 'R$40 a R$60'} onChange={handleChange} value="R$40 a R$60" /> <p>R$40 A R$60</p>
+            <Options
+              type="checkbox"
+              checked={selected === "R$40 a R$60"}
+              onChange={handleChange}
+              value="R$40 a R$60"
+            />{" "}
+            <p>R$40 A R$60</p>
           </DivRatio>
-         
+
           <DivRatio>
-            <Options type="checkbox" checked={selected === 'R$100 a R$200'} onChange={handleChange} value="R$100 a R$200" /> <p>R$100 A R$200</p>
+            <Options
+              type="checkbox"
+              checked={selected === "R$100 a R$200"}
+              onChange={handleChange}
+              value="R$100 a R$200"
+            />{" "}
+            <p>R$100 A R$200</p>
           </DivRatio>
-         
+
           <DivRatio>
-            <Options type="checkbox" checked={selected === 'R$200 a R$500'} onChange={handleChange} value="R$200 a R$500" /> <p>R$200 A R$500</p>
+            <Options
+              type="checkbox"
+              checked={selected === "R$200 a R$500"}
+              onChange={handleChange}
+              value="R$200 a R$500"
+            />{" "}
+            <p>R$200 A R$500</p>
           </DivRatio>
-         
+
           <DivRatio>
-            <Options type="checkbox" checked={selected === 'acima de R$500'} onChange={handleChange} value="acima de R$500" /> <p>Acima de R$500</p>
+            <Options
+              type="checkbox"
+              checked={selected === "acima de R$500"}
+              onChange={handleChange}
+              value="acima de R$500"
+            />{" "}
+            <p>Acima de R$500</p>
           </DivRatio>
-       
         </DivOptions>
-      
       </DivRefine>
 
       <DivProduct>
-      
         <DivFind>
           <ItensFind>{numberList} produtos encontrados</ItensFind>
         </DivFind>
-       
+
         <SwapperGrid>
           {data
             .slice(0, numberList)
             .map(
-              ({id,price,title,image,oldprice,off,socioWine,priceNot,}) => {
+              ({
+                id,
+                price,
+                title,
+                image,
+                oldprice,
+                off,
+                socioWine,
+                priceNot,
+              }) => {
                 return (
                   <DivGrid key={id}>
-                   
                     <Swapper>
                       <DivImg>
-                        <Link to="/product"><Img src={image} alt="imagem do produto" /></Link>
+                        <Link to="/product">
+                          <Img src={image} alt="imagem do produto" />
+                        </Link>
                         <NickProduct>{title}</NickProduct>
                         <Price>
                           <p>{oldprice}</p> <span>{off}</span>
@@ -206,23 +240,24 @@ function Product() {
                         </DivNotSocio>
                       </DivImg>
                     </Swapper>
-                   
+
                     <Link to="/product">
-                      <BtnBuy>ADICIONAR</BtnBuy>
+                      <BtnBuy>ADICIONAR AO CARRINHO</BtnBuy>
                     </Link>
                   </DivGrid>
                 );
               }
             )}
         </SwapperGrid>
-       <SwapperBtn>
-        
-        <BtnProxOne>1</BtnProxOne>
-        <BtnProxTwo>2</BtnProxTwo>
-        <BtnProxThree>3</BtnProxThree>
-        <Points>...</Points>
-        <LinkProx>Proximo <img src={arrowprox} alt="botao prox"/><img src={arrowprox} alt="botão prox"/></LinkProx>
-        
+        <SwapperBtn>
+          <BtnProxOne>1</BtnProxOne>
+          <BtnProxTwo>2</BtnProxTwo>
+          <BtnProxThree>3</BtnProxThree>
+          <Points>...</Points>
+          <LinkProx>
+            Proximo <img src={arrowprox} alt="botao prox" />
+            <img src={arrowprox} alt="botão prox" />
+          </LinkProx>
         </SwapperBtn>
       </DivProduct>
     </Container>

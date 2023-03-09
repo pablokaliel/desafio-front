@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Nick = styled(Link)`
   margin-top: 6px;
   cursor: pointer;
-  
+
   color: #000;
   transition: all 0.5s;
 
@@ -38,9 +38,10 @@ export const SwapperFooter = styled.div`
 export const FooterText = styled.div`
   width: 550px;
 
-  border-right: 1px solid gray;
   margin-top: 10px;
   padding: 0px 10px;
+  
+  border-right: 1px solid gray;
   text-align: justify;
 
   @media (max-width: 770px) {
@@ -113,7 +114,7 @@ export const FooterIcons = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
     width: 100%;
   }
 `;
@@ -125,6 +126,7 @@ export const Copyright = styled.span`
 export const DivIcons = styled.div`
   display: flex;
   flex-direction: column;
+
   @media (max-width: 770px) {
     width: 100%;
     flex-direction: row;

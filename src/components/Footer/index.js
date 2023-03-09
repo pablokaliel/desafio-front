@@ -23,7 +23,6 @@ function Footer() {
   return (
     <Container>
       <SwapperFooter>
-        
         <FooterText>
           <Title>Quem Somos?</Title>
           <Text>
@@ -34,7 +33,7 @@ function Footer() {
             mostos.
           </Text>
         </FooterText>
-        
+
         <FooterContact>
           <Title>Suporte</Title>
           <Nick to="/">central de ajuda </Nick>
@@ -43,13 +42,13 @@ function Footer() {
           <Nick to="/">Politica de Privacidade </Nick>
           <Nick to="/">Blog </Nick>
         </FooterContact>
-       
+
         <FooterContact>
           <DivImg>
             <ImgPg src={pagamento} alt="logo no footer" />
           </DivImg>
         </FooterContact>
-       
+
         <FooterIcons>
           <Title>Redes Sociais</Title>
           <DivIcons>
@@ -67,18 +66,20 @@ function Footer() {
             >
               <Instagram />
             </a>
-            <a href="https://github.com/pablokaliel" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://github.com/pablokaliel"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <Email />
             </a>
           </DivIcons>
         </FooterIcons>
-     
       </SwapperFooter>
-      
+
       <Context>
         <Copyright>&copy;2022 Copyright: React</Copyright>
       </Context>
-    
     </Container>
   );
 }

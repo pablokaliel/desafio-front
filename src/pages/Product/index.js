@@ -38,35 +38,44 @@ function Product() {
   const [number, setNumber] = useState(1);
 
   function success() {
-    alert(`Parabéns, sua compra com ${number} unidades de vinho foi efetuada com sucesso, você sera redirecionado a página inicial.` );
+    if (number < 1) {
+      return alert(
+        `Seu Carrinho não pode estar com ${number} vinhos para efetuar a compra. Para cancelar a compra aperte OK e você será direcionado a página inicial.`
+      );
+    }
+    alert(
+      `Parabéns, sua compra com ${number} unidades de vinho foi efetuada com sucesso, você sera redirecionado a página inicial.`
+    );
   }
- 
+
   function increment() {
-   if( number > 9){
-    return(
-    alert(`unidade maxima por compra é ${number}`))
-   }
-   setNumber(number + 1);
+    if (number > 9) {
+      return alert(`unidade maxima por compra é ${number}`);
+    }
+    setNumber(number + 1);
   }
 
   function discrement() {
     if (number < 1) {
-     return
+      return alert(`Seu numero não pode ser menos que 0`);
     }
     setNumber(number - 1);
   }
   return (
     <Container>
-     
       <LinkBack to="/">
-        <img src={back} style={{ height: 20, width: 20, marginRight: 19 }}  alt="botao voltar"/>
+        <img
+          src={back}
+          style={{ height: 20, width: 20, marginRight: 19 }}
+          alt="botao voltar"
+        />
         Voltar
       </LinkBack>
 
       <DivImageDetail>
         <Img src={detail} alt="imagem grande de detalhe" />
       </DivImageDetail>
-      
+
       <DivDetail>
         <Order>
           Vinhos <span> {">"} </span> Estados Unidos <span> {">"} </span>{" "}
@@ -114,12 +123,12 @@ function Product() {
               <BtnDiscrement onClick={discrement}>-</BtnDiscrement>{" "}
               <Number>{number}</Number>{" "}
               <BtnIncrement onClick={increment}>+</BtnIncrement>
-              <Link to="/"><BtnAdd onClick={success}>Adicionar</BtnAdd></Link>
-
+              <Link to="/">
+                <BtnAdd onClick={success}>COMPRAR</BtnAdd>
+              </Link>
             </BtnNumber>
           </Btn>
         </DivBtn>
-
       </DivDetail>
     </Container>
   );
