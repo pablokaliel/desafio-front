@@ -58,7 +58,7 @@ function Product() {
     },
     {
       id: 3,
-      title: "maça",
+      title: "Bacalhôa Meia Pipa Private Selection Castelão Syrah 2014",
       oldprice: "37,90",
       off: "60%OFF",
       image: vinho,
